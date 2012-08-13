@@ -16,7 +16,27 @@ vs.
 
 Presumably you could collapse the font-files, such that you include the Greek font within the English font of your choice, but that is undesirably because it lacks portability: what if you wish to change the English font-stack? It seemed the better solution to separate the files.
 
-## How to use it
+## Instructions
+
+Simply upload the modifed font files to your webserver and link to them using @font-face like such:
+
+    @font-face {
+    font-family: 'GFS Porson';
+    src: url('path/to/porson/gfsporson-regular.eot');
+    src: local('GFS Porson'), 
+		 url('path/to/porson/gfsporson-regular.eot?#iefix') format('embedded-opentype'),
+		 url('path/to/porson/gfsporson-regular.woff') format('woff'), 
+		 url('path/to/porson/gfsporson-regular.ttf') format('truetype'), 
+		 url('path/to/porson/gfsporson-regular.svg#gfs_porsonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+then make sure to give priority to the font in your css:
+
+    font-family: "GFS Porson", "other", "fonts", "here", serif;
+
+I recommend applying this to a high level tag, such as the ```<body>``` tag.
 
 ## What's Included
 
