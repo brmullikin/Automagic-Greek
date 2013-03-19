@@ -1,13 +1,11 @@
 
 @font-face {
-    font-family: 'GFS Porson';
-    src: url('porson/gfsporson-regular.eot');
-    src: local('GFS Porson'), 
-		 url('porson/gfsporson-regular.eot?#iefix') format('embedded-opentype'),
-		 url('porson/gfsporson-regular.woff') format('woff'), 
-		 url('porson/gfsporson-regular.ttf') format('truetype'), 
-		 url('porson/gfsporson-regular.svg#gfs_porsonregular') format('svg');
+    font-family: 'GFS-Porson';
+    src: url('porson/gfsporsonregular.eot');
+    src: url('porson/gfsporsonregular.eot?#iefix') format('embedded-opentype'),
+		 url('porson/gfsporsonregular.woff') format('woff'), 
+		 url('porson/gfsporsonregular.ttf') format('truetype')
     font-weight: normal;
     font-style: normal;
 }
-body {width:100%;max-width:786px;margin:0 auto;font-size:1em;line-height:1.2;font-family:"GFS Porson", "Goudy Old Style", "Adobe Garamond Pro", Garamond, "Times New Roman", serif;background: #fff;}
+body {width:100%;max-width:786px;margin:0 auto;font-size:1em;line-height:1.2;font-family:"GFS-Porson", "Goudy Old Style", "Adobe Garamond Pro", Garamond, "Times New Roman", serif;background: #fff;}
